@@ -1,4 +1,12 @@
-# FeatureCloud App Template
+# FeatureCloud App Round Template
+The app-round template includes three states as it is depicted in the diagram:
+![States](state_diagram.png)
+1. The coordinator sends a message to a random participant
+2. The receiver adds it's own ID to the message and sends it again to a random participant
+3. When the message bounced n times (n = number of clients), it's sent to the coordinator with a 'DONE:' prefix
+4. The coordinator stops the "computation"
+
+
 
 For registering and testing your apps or using other apps, please visit
 [FeatureCloud.ai](https://featurecloud.ai/). And for more information about FeatureCloud architecture,
